@@ -36,21 +36,21 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\RoadArchitect\Editor\GSDRoadIntersectionEditor.cs" />
+     <Compile Include="Assets\RoadArchitect\Editor\GSDNotification.cs" />
      <Compile Include="Assets\RoadArchitect\Editor\GSDSplineFEditor.cs" />
-     <Compile Include="Assets\RoadArchitect\Editor\GSDRoadSystemEditor.cs" />
-     <Compile Include="Assets\RoadArchitect\Editor\GSDSplineIEditor.cs" />
-     <Compile Include="Assets\RoadArchitect\Editor\GSDWizard.cs" />
      <Compile Include="Assets\RoadArchitect\Editor\GSDEditorProgressWindow.cs" />
-     <Compile Include="Assets\RoadArchitect\Editor\GSDTerrainEditor.cs" />
-     <Compile Include="Assets\RoadArchitect\Editor\GSDRoadEditor.cs" />
-     <Compile Include="Assets\RoadArchitect\Editor\GSDSplineCEditor.cs" />
+     <Compile Include="Assets\RoadArchitect\Editor\GSDWizard.cs" />
+     <Compile Include="Assets\RoadArchitect\Editor\GSDObjExporter.cs" />
      <Compile Include="Assets\RoadArchitect\Editor\GSDHelpWindow.cs" />
      <Compile Include="Assets\RoadArchitect\Editor\GSDSplineNEditor.cs" />
-     <Compile Include="Assets\RoadArchitect\Editor\GSDNotification.cs" />
      <Compile Include="Assets\RoadArchitect\Editor\GSDSaveWindow.cs" />
+     <Compile Include="Assets\RoadArchitect\Editor\GSDSplineIEditor.cs" />
+     <Compile Include="Assets\RoadArchitect\Editor\GSDSplineCEditor.cs" />
+     <Compile Include="Assets\RoadArchitect\Editor\GSDRoadIntersectionEditor.cs" />
+     <Compile Include="Assets\RoadArchitect\Editor\GSDTerrainEditor.cs" />
+     <Compile Include="Assets\RoadArchitect\Editor\GSDRoadSystemEditor.cs" />
      <Compile Include="Assets\RoadArchitect\Editor\GSDRoadSystemEditorMenu.cs" />
-     <Compile Include="Assets\RoadArchitect\Editor\GSDObjExporter.cs" />
+     <Compile Include="Assets\RoadArchitect\Editor\GSDRoadEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -297,9 +297,6 @@
     <Reference Include="Unity.VisualScripting.YamlDotNet">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
-    <Reference Include="EasyRoads3Dv3Editor">
-        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Assets/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
@@ -311,12 +308,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="EasyRoads3Dv3">
-        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
-    </Reference>
-    <Reference Include="DelaunayER">
-        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Assets/EasyRoads3D/lib/DelaunayER.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
@@ -728,6 +719,18 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
