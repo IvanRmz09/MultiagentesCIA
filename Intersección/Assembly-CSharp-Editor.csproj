@@ -675,11 +675,17 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -699,8 +705,11 @@
     <Reference Include="VSSettingsProvider">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/VSSettingsProvider.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+    <Reference Include="Unity.ProBuilder">
+        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -711,6 +720,9 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -719,18 +731,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder">
-        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.Editor">
-        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-        <HintPath>D:/Manzanis/Documents/ITESM/5to semestre/Modelación de Sistemas Multiagente/Unity/Reto/Intersección/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
