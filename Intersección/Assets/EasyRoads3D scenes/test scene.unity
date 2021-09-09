@@ -5826,6 +5826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 644857427}
   - component: {fileID: 644857426}
+  - component: {fileID: 644857428}
   m_Layer: 0
   m_Name: Limit
   m_TagString: limit
@@ -5841,7 +5842,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644857425}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 57.91, y: 1, z: 5.05}
@@ -5860,6 +5861,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &644857428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644857425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f2b0e8f86f804c9da79d4fd379835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &646460416
 Mesh:
   m_ObjectHideFlags: 0
@@ -12310,6 +12323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1326648237}
   - component: {fileID: 1326648236}
+  - component: {fileID: 1326648238}
   m_Layer: 0
   m_Name: Limit (1)
   m_TagString: limit
@@ -12325,7 +12339,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326648235}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 57.91, y: 1, z: 5.05}
@@ -12344,6 +12358,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1326648238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326648235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f2b0e8f86f804c9da79d4fd379835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1326921474
 GameObject:
   m_ObjectHideFlags: 0
@@ -12504,6 +12530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1335954992}
   - component: {fileID: 1335954991}
+  - component: {fileID: 1335954993}
   m_Layer: 0
   m_Name: Limit (2)
   m_TagString: limit
@@ -12519,7 +12546,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335954990}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.22, y: 1, z: 53.4}
@@ -12538,6 +12565,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1335954993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335954990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f2b0e8f86f804c9da79d4fd379835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1338941623
 GameObject:
   m_ObjectHideFlags: 0
@@ -14006,6 +14045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1464068673}
   - component: {fileID: 1464068672}
+  - component: {fileID: 1464068674}
   m_Layer: 0
   m_Name: Limit (3)
   m_TagString: limit
@@ -14021,7 +14061,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464068671}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 17.82, y: 1, z: 52.3}
@@ -14040,6 +14080,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1464068674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464068671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f2b0e8f86f804c9da79d4fd379835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!134 &1464165208
 PhysicMaterial:
   m_ObjectHideFlags: 0

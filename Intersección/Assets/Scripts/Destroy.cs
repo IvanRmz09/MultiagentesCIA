@@ -6,7 +6,7 @@ public class Destroy : MonoBehaviour
 {
     void OnCollisionEnter(Collision enemy)
     {
-        if (enemy.gameObject.tag == "limit")
+        if (enemy.gameObject.tag == "Car")
         {
             Destroy(enemy.gameObject);
         }
