@@ -19,44 +19,34 @@ public class jsonDataClass
 public class dataList
 {
     public string tag;
-    public int posx;
-    public int posz;
-    public int lights;
+    public int x;
+    public int z;
+    public int luces;
     public int reference;
 }
 
 public class AgentControllerNEW : MonoBehaviour
 {
-    public float timeToUpdate = 1.5f;
-    private float timer;
-    public float dt;
+    public float spawnTime = 1.5f;
+    private float timing;
+    public float otherTime;
 
     void Start() {
         #if UNITY_EDITOR
-        //string call = "WAAAAASSSSSAAAAAAAAAAP?";
-        Vector3 fakePos = new Vector3(3.44f, 0, -15.707f);
+        Vector3 fakePos = new Vector3(3.44f, 1.03f, -15.707f);
         string json = EditorJsonUtility.ToJson(fakePos);
-        //StartCoroutine(SendData(call));
         StartCoroutine(SendData(json));
-        timer = timeToUpdate;
+        timing = spawnTime;
 
 #endif
         }
 
-    //Los agentes los ponemos manualmente en la simulacion
-
-    public GameObject cars;
-    
-
-    // public List<Vector3> posC1;
-    // public List<Vector3> posC2;
-    // public List<Vector3> posC3;
-    // public List<Vector3> posC4;
-
+    public GameObject[] cars;
     private List<List<Vector3>> positions;
 
-    private SortedDictionary<int, GameObject> activeCars =
+    private SortedDictionary<int, GameObject> carsSpwnd =
     new SortedDictionary<int, GameObject>();
+    int RandomOption;
 
 
     // IEnumerator - yield return
@@ -87,22 +77,16 @@ public class AgentControllerNEW : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);    // Answer from Python
                 jsonDataClass js= JsonUtility.FromJson<jsonDataClass>(www.downloadHandler.text);
                 foreach (dataList item in js.data){
-                    //Debug.Log(item.posx);
-                    // if(item.reference == 4 || item.reference >= 10){
-                    //     Vector3 pos= new Vector3(item.posx,1.58f,item.posz);
-                    //     List<Vector3> posVec = new List<Vector3>();
-                    //     posVec.Add(pos);
-                    //     positions.Insert(item.reference, posVec);
-                    //     //Debug.Log("1: "+pos);
-                    //     posVec.Clear();
-                    // }
-                    Vector3 pos = new Vector3(item.posx*10,1.58f,item.posz*10);
+                    //Debug.Log(item.x);
+                    Vector3 pos = new Vector3(item.x*10,1.58f,item.z*10);
+                    RandomOption = UnityEngine.Random.Range(0, cars.Length);
                     Debug.Log(pos);
-                    if(activeCars.ContainsKey(item.reference)){
-                        activeCars[item.reference].GetComponent<CarController>().newPosition = pos;
+                    if(carsSpwnd.ContainsKey(item.reference)){
+                        carsSpwnd[item.reference].GetComponent<CarController>().newPosition = pos;
 
                     } else {
-                        activeCars.Add(item.reference,Instantiate(cars,pos,Quaternion.Euler(0, 0, 0)));
+                        GameObject carro = cars[RandomOption];
+                        carsSpwnd.Add(item.reference,Instantiate(carro,pos,Quaternion.Euler(0, 0, 0)));
                     }
 
                     www.Dispose();
@@ -119,24 +103,17 @@ public class AgentControllerNEW : MonoBehaviour
 
     void Update()
     {
-        /*
-         *    5 -------- 100
-         *    timer ----  ?
-         */
-        timer -= Time.deltaTime;
-        dt = 1.0f - (timer / timeToUpdate);
+        timing -= Time.deltaTime;
+        otherTime = 1.0f - (timing / spawnTime);
 
-        if(timer < 0)
+        if(timing < 0)
         {
 #if UNITY_EDITOR
-            timer = timeToUpdate; // reset the timer
-            Vector3 fakePos = new Vector3(3.44f, 1.5f, -15.707f);
+            timing = spawnTime; // reset the timing
+            Vector3 fakePos = new Vector3(3.44f, 1.03f, -15.707f);
             string json = EditorJsonUtility.ToJson(fakePos);
             StartCoroutine(SendData(json));
 #endif
         }
-
-    //HACER EL FOR PARA lightS1 y todos esos y cambiar las luces
-
     }
 }
