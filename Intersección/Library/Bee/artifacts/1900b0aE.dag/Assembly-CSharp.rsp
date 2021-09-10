@@ -341,7 +341,10 @@
 "Assets/RoadArchitect/Spline/GSDSplineF.cs"
 "Assets/RoadArchitect/Spline/GSDSplineI.cs"
 "Assets/RoadArchitect/Spline/GSDSplineN.cs"
+"Assets/Scripts/AgentControllerNEW.cs"
+"Assets/Scripts/CarController.cs"
 "Assets/Scripts/Destroy.cs"
+"Assets/Scripts/Semaforo.cs"
 "Assets/Scripts/spawnCar.cs"
 -langversion:8.0
 

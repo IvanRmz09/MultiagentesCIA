@@ -20,7 +20,7 @@ public class spawnCar : MonoBehaviour
     private void Spawn()
     {
         nextSpawnTime = Time.time + spawnDelay;
-        Instantiate(car, transform.position, transform.rotation);
+        Instantiate(car, transform.position, Quaternion.identity);
     }
     
     private bool ShouldSpawn()
